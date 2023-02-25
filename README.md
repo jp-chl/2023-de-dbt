@@ -19,3 +19,7 @@ Try running the following commands:
 
 - ```dbt run``` does not consider seed
 - ```dbt build``` does
+
+- ```dbt build --select fact_trips```: runs only fact_trips
+- ```dbt build --select +fact_trips```: all that fact_trips needs
+- ```dbt run --var 'is_test_run: false'``` updates all without limit clause
